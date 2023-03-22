@@ -19,7 +19,7 @@
 
         <!-- <hr /> -->
 
-        <button class="btn btn-primary"><i class="fa-solid fa-microphone-slash"></i></button>
+        <button class="btn btn-primary">Start recording</i></button>
 
         <br>
 
@@ -44,7 +44,7 @@
 
         function startRecording() {
             recorder.start().then(() => {
-                button.innerHTML = `<i class="fa-solid fa-microphone"></i>`;
+                button.textContent = 'Stop recording';
                 button.classList.toggle('btn-danger');
                 button.removeEventListener('click', startRecording);
                 button.addEventListener('click', stopRecording);
@@ -84,7 +84,7 @@
                 li.appendChild(player);
                 document.querySelector('#playlist').appendChild(li);
 
-                button.innerHTML = `<i class="fa-solid fa-microphone-slash"></i>`;
+                button.innerHTML = button.textContent = 'Start recording';;
                 button.classList.toggle('btn-danger');
                 button.removeEventListener('click', stopRecording);
                 button.addEventListener('click', startRecording);
@@ -97,7 +97,7 @@
             const loader = document.querySelector('#loader')
             loader.style.display = 'block'
             const myHeaders = new Headers();
-            myHeaders.append("Authorization", "Bearer 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");
+            myHeaders.append("Authorization", "Bearer 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");
 
             const formdata = new FormData();
             formdata.append("model", "whisper-1");
@@ -116,6 +116,7 @@
                     const text = JSON.parse(result).text;
                     // insert text to speech here
                     document.querySelector('.text').innerHTML = text;
+                    console.log(text)
                     loader.style.display = 'none'
                 })
                 .catch(error => console.log('error', error));

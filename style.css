@@ -2,7 +2,7 @@
     max-width: 700px;
     margin: auto;
     margin-top: 15rem;
-    background: #1474C8;
+    background: linear-gradient(#67944F, #BB73BB);
     color: #efeaee;
     text-align: center;
     padding: 1rem;
@@ -37,7 +37,7 @@
     background: #2a60f2;
     color: white;
     border: none;
-    border-radius: 25px;
+    border-radius: 10px;
 }
 
 .btn:hover {
