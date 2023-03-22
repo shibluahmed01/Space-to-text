@@ -1,0 +1,49 @@
+.container {
+    max-width: 700px;
+    margin: auto;
+    margin-top: 15rem;
+    background: linear-gradient(#1474C8, #b5a09a, #00CA4B);
+    color: #efeaee;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 10px;
+    border: 1px solid white;
+    font-family: Arial, sans-serif;
+}
+
+#playlist {
+    background: rgb(139, 172, 202);
+    list-style: none;
+}
+
+.font {
+    font-size: 20px;
+}
+
+.text {
+    font-size: 20px;
+    padding: 1rem;
+}
+
+#loader {
+    font-size: 20px;
+    display: none;
+}
+
+.btn {
+    padding: .50rem;
+    font-size: 15px;
+    background: #2a60f2;
+    color: white;
+    border: none;
+    border-radius: 25px;
+}
+
+.btn:hover {
+    background: #3634cb;
+}
+
+body {
+    height: 100vh;
+    background: black;
+}
