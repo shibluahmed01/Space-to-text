@@ -14,7 +14,7 @@
     <div class="container">
         <div class="font">
             <h1><i>Mic Recorder to Mp3 Example</i></h1>
-            <i>Check your web developer tool console.</i>
+            <p>Check your web developer tool console.</p>
         </div>
 
         <!-- <hr /> -->
@@ -97,8 +97,7 @@
             const loader = document.querySelector('#loader')
             loader.style.display = 'block'
             const myHeaders = new Headers();
-            myHeaders.append("Authorization", "Bearer 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");
-
+            myHeaders.append("Authorization", "Bearer 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");
             const formdata = new FormData();
             formdata.append("model", "whisper-1");
             formdata.append('file', file, 'audio.mp3');

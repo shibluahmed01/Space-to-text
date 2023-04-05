@@ -12,7 +12,7 @@
 }
 
 #playlist {
-    background: rgb(139, 172, 202);
+    /* background: rgb(139, 172, 202); */
     list-style: none;
 }
 
@@ -45,6 +45,5 @@
 }
 
 body {
-    height: 100vh;
     background: black;
 }
